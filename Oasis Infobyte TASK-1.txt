@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class OnlineReservationSystem {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Online Reservation System");
+        System.out.println("Please enter your login id and password");
+        String loginId = sc.nextLine();
+        String password = sc.nextLine();
+        if (loginId.equals("admin") && password.equals("admin")) {
+            System.out.println("Login Successful");
+            System.out.println("Please enter the details for reservation");
+            System.out.println("Enter your name");
+            String name = sc.nextLine();
+            System.out.println("Enter your train number");
+            int trainNumber = sc.nextInt();
+            System.out.println("Enter your class type");
+            String classType = sc.nextLine();
+            System.out.println("Enter your date of journey");
+            String dateOfJourney = sc.nextLine();
+            System.out.println("Enter your from place");
+            String fromPlace = sc.nextLine();
+            System.out.println("Enter your destination");
+            String destination = sc.nextLine();
+            System.out.println("Reservation Successful");
+            System.out.println("Your PNR number is: 12345");
+        } else {
+            System.out.println("Login Failed");
+        }
+    }
+}
